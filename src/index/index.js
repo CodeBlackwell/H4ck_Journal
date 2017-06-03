@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
-
-const App = () => <h1>Perfectly simple Webpack 2 setup</h1>;
+import App from '../containers/App/App'
 
 ReactDOM.render(
   <App />,
   document.getElementById('root')
 );
+
+

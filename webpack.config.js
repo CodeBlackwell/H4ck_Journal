@@ -9,7 +9,7 @@ const nodeEnv = process.env.NODE_ENV || 'development';
 const { ifDevelopment, ifProduction } = getIfUtils(nodeEnv);
 
 module.exports = removeEmpty({
-  entry: './src/index.js',
+  entry: './src/index/index.js',
 
   output: {
     filename: ifProduction('[name]-bundle-[hash].js', '[name]-bundle.js'),
@@ -58,7 +58,7 @@ module.exports = removeEmpty({
     new HtmlWebpackPlugin({
       hash: true,
       filename: 'index.html',
-      template: './src/index.ejs',
+      template: './src/index/index.ejs',
       environment: nodeEnv,
     }),
 
