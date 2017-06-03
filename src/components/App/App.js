@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
+import Homepage from '../../containers/Homepage/Homepage'
 
 
 export default class App extends Component {
     render() {
         return (
-            <h1>Perfectly simple Webpack 2 setup</h1>
+            <Homepage />
             )
     }
 }
