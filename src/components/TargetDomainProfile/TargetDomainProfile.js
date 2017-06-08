@@ -7,11 +7,11 @@ export default ({
                     ipAddresses,
                     imgURL,
                     pipeline
-                }) => {
+                }, key) => {
 
 
     return (
-        <div className="target-domain-profile">
+        <div className="target-domain-profile" key={ key }>
             <header className="target-domain-profile-name">
                 { domainName }
             </header>

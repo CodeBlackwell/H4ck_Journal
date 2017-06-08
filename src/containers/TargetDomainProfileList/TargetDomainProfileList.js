@@ -12,7 +12,7 @@ export default class TargetDomainProfileList extends Component {
     }
 
     _renderTargets(profiles) {
-        return profiles.map((profile, index) => TargetDomainProfile(profile))
+        return profiles.map((profile, index) => TargetDomainProfile(profile, index))
     }
 
     render() {
@@ -45,6 +45,8 @@ export default class TargetDomainProfileList extends Component {
             </div>
         )
     }
+
+
 }
 //
 // TargetDomainProfileList.PropTypes = {

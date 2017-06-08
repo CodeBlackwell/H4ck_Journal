@@ -4,8 +4,18 @@
   padding-bottom: 10px;
   min-width: 200px;
   width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
+
 .target-domain-profile-logo {
- width: 80%;
+  width: 80%;
+  align-self: center;
+}
+
+.target-domain-profile-name {
+  font-size: 20px;
+  text-align: center;
 }
